@@ -1,0 +1,8 @@
+master: 我就要修改
+aa: 123
+# 假设：在把 reg 分支合并到 master 分支期间 
+git checkout master 
+git merge reg 
+# 打开包含冲突的文件，手动解决冲突之后，再执行如下命令 
+git add . 
+git commit -m "解决了分支合并冲突的问题"
